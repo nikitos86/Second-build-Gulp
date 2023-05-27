@@ -1,0 +1,19 @@
+@mixin respond ($breakpoint)
+   @if $breakpoint == Small
+      @media only screen and ( max-width: 576px )
+         @content
+   @if $breakpoint == Medium
+      @media only screen and ( max-width: 768px )
+         @content
+   @if $breakpoint == Large
+      @media only screen and ( max-width: 992px )
+         @content
+   @if $breakpoint == Extra-large
+      @media only screen and ( max-width: 1200px )
+         @content
+   @if $breakpoint == Extra-extra-large
+      @media only screen and ( max-width: 1400px )
+         @content
+   @if $breakpoint == Tab-screen
+      @media only screen and ( min-width: 1920px )
+         @content
